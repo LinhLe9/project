@@ -1,0 +1,394 @@
+body {
+	background-color: #f2fae8;
+	margin: 0;
+    padding: 0;
+	font-family:"Georgia",serif;
+	color: #3b3c38
+	}
+	
+/* Set style for header section */
+.header {
+	display: flex;
+	justify-content: left; /* align header to the left of page */
+	align-items: center; /* Center vertically */
+	position: sticky; /* Sticks to the top */
+	top: 0;
+	background-color: white;
+	color: black; /* Change to black for readability */
+	width: 100%;
+	margin: 0;
+	z-index: 1000
+	}
+.logo {
+	width:100px;
+	margin: 15px;
+	margin-left:40px
+	}
+.menu{	
+	list-style: none;  /*remove bulletpoint*/
+    display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 35%
+	} 
+.menu li {
+	display: flex;
+	align-items: center;
+    justify-content: center
+	}
+.menu a {
+	color: #5a6641; 
+    text-decoration: none;
+	font-size: 15px;
+	padding: 5px 10px
+	}
+.menu a:hover {
+	color: #719163 /* color change when user hover */;
+	text-decoration: underline
+	}
+	
+/*Set style for Advertisement section*/
+.adver {
+	height:80vh;
+	margin-top: 0;
+	background-image: url(../images/background.jpg); 
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: scroll; 
+	background-size: cover;
+	background-position: top;		
+	background-color: #f2fae8;
+	background-size: 100%
+	}
+p#adverText1 {
+	font-family:'Brush Script MT', cursive;
+	color:#911a07;
+	text-align:center;
+	padding-top:20px;
+	margin:0;
+	font-size: 65px;
+	text-shadow: 3px 3px 2px #ffffff;
+	animation: blink 2s infinite;
+	}
+ @keyframes blink {
+    0% {
+        opacity: 1;
+        text-shadow: 2px 2px 5px #ffffff;
+        }
+    50% {
+        opacity: 0; 
+        text-shadow: none;
+        }
+    100% {
+		opacity: 1;
+        text-shadow: 2px 2px 5px #ffffff;
+        }
+    }
+p#adverText2 {
+	color:#911a07;
+	text-align:center;
+	padding-top:0px;
+	margin:0;
+	font-size: 15px
+	}
+.button-container{
+	text-align: center;
+	padding-top:15px
+	}
+#adverButton {
+	background-color: #911a07;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: white ;
+	border: none;
+	border-radius: 5px;
+	}	
+	
+/* Set style for frame*/
+.frame {
+	width: 70%;
+    margin: 0 auto;
+    background-color: #fcfef8;
+    padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+    }
+h1 {
+	text-align:center;
+	color: #5a6641
+	}
+
+/*Set style for About section*/
+p#aboutText {
+	text-align: justify;
+	padding: 10px;
+	width: 75%;
+	font-size: 15px
+	}
+#about_image {
+	width: 25%;
+	float: right;
+    height: auto;
+	margin-left:20px;
+	margin-right:10px;
+	border-radius: 10px
+	}
+	
+/* Set style for member table*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+	}
+.member {clear: right}
+.member td img {
+	width: 60%; 
+	object-fit: cover;
+	border-radius: 7px
+	}
+.member td, th {
+    padding: 15px;               
+    text-align: center;           
+	vertical-align: middle;
+	width: 50%;}
+.member td p.NameTitle {
+	font-weight: bold;
+	font-size: 15px
+	}
+.member td p.Description {
+	font-size:70%
+	}
+	
+/*Set style for footer*/
+.footer {
+	background-color: white;
+	color: black;
+	width: 100%;
+	min-height: 15vh;
+	margin: 0; /*remove margin*/ 
+    z-index: 1000;
+	display: flex;
+    flex-direction: column;
+	text-align: center; /*Keep the items in the footer center*/
+	align-items: center;
+	justify-content: center;
+	}	
+.menuFooter ul {
+    list-style: none; 
+    padding: 0;
+    display: flex;
+    gap: 15px;
+	}
+.menuFooter li {
+    display: inline;
+	}
+.menuFooter a {
+    color: #5a6641;
+    text-decoration: none;
+    font-size: 15px;
+	}
+.menuFooter a:hover {
+    color: #719163; 
+    text-decoration: underline;
+	}
+.iconFooter {
+	display: flex;
+    justify-content: center;
+	gap: 20px
+	}
+.iconFooter img {
+	width: 15px;
+	height: auto
+	}
+#textFooter p {
+    margin: 0;
+    font-size: 12px;
+	padding-bottom: 10px;
+	color: #7a7979
+	}
+	
+/* Set style for contact us hearder */
+h1#contactus {
+	text-align:center;
+	color: #5a6641;
+	margin:0;
+	padding-top: 250px;
+	text-shadow: 1px 1px 10px #ffffff;}
+p#CUdetail {
+	text-align:center;
+	color: #5a6641;
+	margin:0;
+	padding: 20px;
+	line-height: 2}
+.contactUsHeader {
+	height: 85vh;
+	margin-top: 0;
+	background-image: url(../images/contactUs.jpg); 
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: scroll; 
+	background-size: cover;
+	background-position: bottom;		
+	background-color: #f2fae8;
+	background-size: 100%}
+
+/* Set style for contact us form*/
+.CUdetail{
+	width:100%
+	}
+.formContactUs{
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap
+	}
+.contactUsForm {
+    width: 60%; 
+    padding: 20px;
+	}
+.contactUsForm label {
+	display: block;
+    margin-bottom: 10px;
+	margin-top: 20px
+	}
+.contactUsForm input, select {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #8eb888
+	}
+.contactUsForm textarea {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #8eb888
+	}
+.contactUsForm button {
+    padding: 10px 20px;
+    background-color: #f2fae8; 
+    color: #51804a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer
+	}
+.contactBar {
+	width: 20%
+	}
+.contactBar table {
+	width: 100%;	
+	border-collapse: collapse
+	}
+.contactBar td, th {
+	padding: 20px; 
+    text-align: left;
+    line-height: 1
+	}
+.contactTitle {
+	font-weight: bold
+	}
+.contactDetail {
+	font-size: 12px
+	}
+
+/* Media Queries for Responsive Design */
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+		}
+	.logo {
+		width:100px;
+		margin: 0px
+		}
+    .menu {
+        flex-direction: column;
+        align-items: center; 
+		width: 80%;
+		margin:10px;
+		margin-left:0
+		}
+    .menu li {
+        margin: 0;
+		justify-content: center 
+		}
+    .frame {
+        flex-direction: column;
+        align-items: center;
+		}
+	.adver {
+		height:55vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end
+		}
+	p#adverText1 {
+		font-size:55px
+		}
+	p#adverText2 {
+		padding-bottom: 0px;
+		font-size: 12px
+		}
+	.button-container{
+		text-align: center;
+		padding-top:15px;
+		padding-bottom:25px
+		}
+	.about {
+		display: grid;
+		place-items: center; 
+		height: auto
+		}
+	p#aboutText {
+		width: 100%;
+		margin:0;
+		padding:10px;
+		font-size:12px
+		}
+    #about_image {
+        width: 70%;
+		float:none;
+		margin:0px;
+		}
+	.contactUsHeader {
+		height: 55vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end
+		}
+	#contactus {
+		padding-top: 500px;
+		text-shadow: 1px 1px 5px #ffffff;}
+	#CUdetail{
+        font-size: 10px;
+		padding:0;
+		margin:0;
+		line-height: 1
+		}
+	.contactUsForm {
+		width: 100%;
+		}
+	.contactBar {
+		width: 100%
+		}	
+	.contactBar td, th {
+		padding: 5px; 
+		text-align: center;
+		line-height: 1
+		}
+@media (max-width: 480px) {
+    #adverText1 {
+        font-size: 25px;
+		}
+	#adverText2{
+        font-size: 10px;
+		}
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .NameTitle {
+        font-size: 12px;
+    }
+

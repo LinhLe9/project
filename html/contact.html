@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- data about data goes betweeen the head tags -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> The Garden Shop: Contact us </title>	
+		<link rel="stylesheet" type="text/css" href="stylesheet.css"> 
+	</head>
+	<body>
+		<div class="header">
+			<img class="logo" src="../images/GardenShop.png" alt ="logo">
+			<ul class="menu"> 
+				<li><a href="index.html">Home </a></li>
+				<li><a href="product.html">Garden Plants </a></li>
+				<li><a href="contact.html">Contact Us </a></li>
+			</ul>
+		</div>
+		
+		<!-- form -->
+		<div class ="contactUsHeader">
+			<h1 id="contactus">Contact Us</h1>
+			<p id ="CUdetail">GardenShiop.ie would LOVE to hear from you, whether it's a question, a comment, suggestions, </br>advice needed or a customer service experience (good or bad!) </p>
+		</div>
+		<div class = "frame">
+			
+			<div class="CUdetail">
+				<h1> Get in touch </h1>
+				<div class="formContactUs">
+					<form class="contactUsForm">
+						<div class="form-group">
+							<label for ="email"> Please enter your email</label> 
+							<input type="email" id="email" name="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+						</div>
+						
+						<div class="form-group">
+							<label for ="inquiryType"> Please select an option</label>
+							<select id="inquiryType" name="inquiryType"  required>
+								<option value="wrongOrder">Wrong Order</option>
+								<option value="productQuestion">Question about Product</option>
+								<option value="feedback">Give us some feedback</option>
+								<option value="others">Others Inquiry</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for ="email"> Lets us hear your voice </label>
+							<textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+						</div>
+						<button type="submit" class="submit-btn">Send your message</button>
+					</form>
+					<!-- contact information bar-->
+					<div class="contactBar">
+						<div class="contactTable">
+							<table>
+								<tr>
+									<td class ="contactTitle"> Tel
+								</tr>
+								<tr> 
+									<td class ="contactDetail"> 01 4498 500 
+								</tr>
+								<tr>
+									<td class ="contactTitle"> Fax
+								</tr>
+								<tr>
+									<td class ="contactDetail"> 01 4972 200 
+								</tr>
+								<tr>
+									<td class ="contactTitle"> Mail
+								</tr>
+								<tr>
+									<td class ="contactDetail"> admissions@ncirl.ie 
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class ="footer">
+			<div class = "menuFooter">
+				<ul class="menuFooter"> 
+					<li><a href="index.html">Home </a></li>
+					<li><a href="product.html">Garden Plants </a></li>
+					<li><a href="contact.html">Contact Us </a></li>
+				</ul>
+			</div>
+			<div class = "iconFooter">
+				<a href="https://www.facebook.com/NCIRL/">
+					<img src="../images/icons8-facebook-128.png" alt="facebook icon" />
+				</a>
+				<a href="https://www.instagram.com/ncirl/">
+					<img src="../images/icons8-instagram-160.png" alt="instagram icon" />
+				</a>
+				<a href="https://x.com/NCIRL">
+					<img src="../images/icons8-twitterx-144.png" alt="instagram icon" />
+				</a>
+			</div>
+			<div id ="textFooter">
+			</br>
+			<p> &copy; 2024, The Garden Shop</p>
+			</div>
+		</div>
+	</body>
+</html>
+				
